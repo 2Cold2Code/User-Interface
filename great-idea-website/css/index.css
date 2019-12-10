@@ -163,22 +163,81 @@ h5 {
 /* Your code starts here! */
 
 header {
-    diplay: inline-block;
+    display: inline-block;
     width: 100%;
+    box-sizing: border-box;
 }
 
 nav {
     display: inline-block;
     width: 70%;
+    box-sizing: border-box;
 }
 
 a {
+    font-size: 2rem;
     display: inline-block;
     width: 11%;
     margin-left: 5%;
+    box-sizing: border-box;
 }
 
-img {
+.logo {
     display: inline-block;
     width: 20%;
+    box-sizing: border-box;
+}
+
+
+/*lower Top section*/
+
+.lowerTop {
+    display: inline;
+    width: 50%;
+    height: 30%;
+    box-sizing: border-box;
+}
+
+.headButt {
+    display: inline-block;
+    width: 48%;
+    margin-left: 10%;
+    box-sizing: border-box;
+}
+
+.lowerTop h1 {
+    display: block;
+    width: 35%;
+    height: 25%;
+    margin: 6%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 60px;
+    box-sizing: border-box;
+}
+
+.lowerTop .button {
+    display: inline-block;
+    width: 25%;
+    height: 30%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 30%;
+    border: 2px solid black;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.lowerTop .button:hover {
+    background: gray;
+    border: 1px solid slategray;
+    box-sizing: border-box;
+}
+
+.lowerTop img {
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-sizing: border-box;
 }
