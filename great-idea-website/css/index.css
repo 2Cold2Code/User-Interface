@@ -162,6 +162,19 @@ h5 {
 
 /* Your code starts here! */
 
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin: 16%;
+}
+
+.topCont {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
+
 header {
     display: inline-block;
     width: 100%;
@@ -192,8 +205,8 @@ a {
 /*lower Top section*/
 
 .lowerTop {
-    display: inline;
-    width: 50%;
+    display: inline-block;
+    width: 100%;
     height: 30%;
     box-sizing: border-box;
 }
@@ -240,4 +253,66 @@ a {
     margin-left: 10%;
     margin-top: 5%;
     box-sizing: border-box;
+}
+
+
+/*middle section*/
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.topMid,
+.bottomMid {
+    margin-top: 5%;
+    padding-top: 10%;
+    display: inline;
+    box-sizing: border-box;
+}
+
+.topMid {
+    border-top: 2px solid gray;
+}
+
+.bottomMid {
+    border-bottom: 2px solid gray;
+}
+
+.text-content,
+.text-content2 {
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.bottomMid .text-content2 {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.text-content,
+.text-content2 p {
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+#features,
+#services {
+    margin-left: .7%;
+    box-sizing: border-box;
+}
+
+.middle-img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#about,
+#product {
+    margin-right: .7%;
+    box-sizing: border-box;
+}
+
+footer {
+    margin-top: 10%;
 }
