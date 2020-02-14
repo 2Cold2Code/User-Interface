@@ -3,64 +3,403 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
+
 /* Your code starts here! */
+
+@keyframes imgSlide {
+    0% {
+        display: none;
+    }
+    12.5% {
+        width: 45px;
+        opacity: .8%;
+    }
+    25% {
+        width: 95px;
+        opacity: 8%;
+    }
+    37.5% {
+        width: 142px;
+        opacity: 28%;
+    }
+    50% {
+        width: 190px;
+        opacity: 48%;
+    }
+    62.5% {
+        width: 237px;
+        opacity: 56%;
+    }
+    75% {
+        width: 284px;
+        opacity: 70%;
+    }
+    87.5% {
+        width: 332;
+        opacity: 84%;
+    }
+    100% {
+        width: 379px;
+        opacity: 100%;
+    }
+}
+
+body {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+.topCont {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+}
+
+header {
+    box-sizing: border-box;
+    background: lavender;
+    position: fixed;
+    top: 1rem;
+    display: inline-block;
+    width: 100%;
+}
+
+nav {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 70%;
+}
+
+a {
+    box-sizing: border-box;
+    font-size: 2rem;
+    display: inline-block;
+    width: 11%;
+    margin-left: 5%;
+}
+
+.logo {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 20%;
+}
+
+
+/*lower Top section*/
+
+.lowerTop {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    height: 30%;
+}
+
+.headButt {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 48%;
+    margin-left: 10%;
+}
+
+.lowerTop h1 {
+    box-sizing: border-box;
+    display: block;
+    width: 35%;
+    height: 25%;
+    margin: 6%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    text-align: center;
+    font-size: 60px;
+}
+
+.lowerTop .button {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 25%;
+    height: 30%;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 30%;
+    border: 2px solid black;
+    text-decoration: none;
+}
+
+.lowerTop .button:hover {
+    box-sizing: border-box;
+    background: gray;
+    border: 1px solid slategray;
+}
+
+.lowerTop img {
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 5%;
+    animation: imgSlide 4s;
+}
+
+
+/*middle section*/
+
+h2 {
+    font-size: 1.8rem;
+    box-sizing: border-box;
+}
+
+.topMid,
+.bottomMid {
+    box-sizing: border-box;
+    padding-top: 10%;
+    display: inline-block;
+}
+
+.midCont {
+    display: block;
+    border-top: 2px solid slategray;
+    border-bottom: 4px solid slategray;
+}
+
+.text-content,
+.text-content2 {
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.bottomMid .text-content2 {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+.text-content,
+.text-content2 p {
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+#features,
+#services {
+    margin-left: .7%;
+    box-sizing: border-box;
+}
+
+.middle-img {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#about,
+#product {
+    box-sizing: border-box;
+    margin-right: .7%;
+}
+
+footer {
+    margin-top: 10%;
+}
+
+.toTop {
+    display: block;
+    text-align: center;
+    width: 10%;
+    height: 4.5rem;
+    margin-left: 45%;
+    background: rgb(255, 253, 112);
+    text-decoration: none;
+    border: 1px solid rgb(255, 255, 130);
+    border-radius: 1rem;
+}
+
+.toTop:hover {
+    width: 9.99%;
+    height: 4.49%;
+    text-align: center;
+    border: 1px solid blue;
+    border-radius: .99rem;
+    background: blue;
+    text-decoration: none;
+}
+
+.topButt {
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.topButt:hover {
+    color: silver;
+}
+
+
+/* Vision page css */
+
+h1 {
+    font-size: 2rem;
+}
+
+p .bgImg {
+    display: block;
+    width: 50%;
+    background-image: url(img/profilePic.png);
+    text-align: center;
+    text-justify: auto;
+}
